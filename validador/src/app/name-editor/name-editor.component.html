@@ -1,0 +1,9 @@
+<label>
+  Nombre: <input type="text" [formControl]="name">
+</label>
+<br>
+value = {{name.value}} <br>
+status = {{name.status}} <br>
+errors = {{name.errors | json }} <br>
+pristine = {{name.pristine}} <br>
+touched = {{name.touched }} <br>
