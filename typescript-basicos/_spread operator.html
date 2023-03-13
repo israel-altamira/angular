@@ -1,0 +1,20 @@
+
+<html>
+    <body>
+        <h1>Ejemplos de ES6</h1>
+        <li>funcion con un argumento declarado en forma de literal de objeto</li>
+        <li>funcion con argumento con valor por default</li>
+        <li>declaracion de arreglos y constantes</li>
+        <li>spread operator para hacer un nuevo array  // el spread op divide un array en strings?</li>
+        <script>
+            function buildpersondata({firstname, lastname}, address = ['']){
+                return `${firstname}${lastname}${address}`;
+            }
+            const partialAddress = ['street name','street number','Po Box'];
+            const firstname = 'kobe', lastname = 'bryant';
+            const persondata = {firstname, lastname};
+            const address = [...partialAddress, 'Staples center'];
+            buildpersondata(persondata, address);
+        </script>
+    </body>
+</html>

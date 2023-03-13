@@ -1,0 +1,50 @@
+<div class="tabla-container">
+  <table class="b-1px-gray w-100">
+    <thead>
+    <tr class="b-1px-gray">
+      <th>Poligono</th>
+      <th>
+        <div>Aproximacion PI</div>
+        <div>(perimetro/2*radio)</div>
+      </th>
+      <th>
+        <div>Angulo</div>
+        <div>pi*2r/#lados(rad)</div>
+      </th>
+      <th>
+        <div>adyacente = cos°*H</div>
+        <div>(H=radio)</div>
+        <div>cos</div>
+      </th>
+      <th>
+        <div>opuesto = sin°*H</div>
+        <div>(H=radio)</div>
+        <div>sin</div>
+      </th>
+      <th>Perimetro</th>
+      <th>Area Triangular</th>
+      <th>Area Total</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let iteracion of iteraciones" class="b-1px-gray">
+      <td [innerText]="iteracion.ladosPoligono"></td>
+      <td [innerText]="iteracion.aproximacion"></td>
+      <td [innerText]="iteracion.angulo"></td>
+      <td>
+        <div [innerText]="iteracion.adyacente"></div>
+        <div [innerText]="iteracion.cos"></div>
+      </td>
+      <td>
+        <div [innerText]="iteracion.opuesto"></div>
+        <div [innerText]="iteracion.sin"></div>
+      </td>
+      <td [innerText]="iteracion.perimetro"></td>
+      <td [innerText]="iteracion.areaTriangular"></td>
+      <td [innerText]="iteracion.area"></td>
+    </tr>
+    </tbody>
+  </table>
+  <br>
+</div>
+<!-- length: {{iteraciones.length}} -->
