@@ -8,10 +8,8 @@
 /bazel-out
 
 # dependencies
-/node_modules
-/math/node_modules/*
-/math/package-lock.json
-
+**/node_modules/
+**/package-lock.json
 
 # profiling files
 chrome-profiler-events.json
@@ -43,6 +41,7 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+package-lock.json
 
 # System Files
 .DS_Store
